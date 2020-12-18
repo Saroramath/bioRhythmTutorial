@@ -17,13 +17,12 @@ function formatDate(isoString){
 function BiorhythmCard({ birthDate, targetDate }){
     const{physical, emotional, intellectual} = calculateBiorhythms(birthDate,targetDate);// good way to return an object from a functon and use it like that detructuring
     return (
-        <IonCard className = "biorhythm-card">
+        <IonCard className = "biorhythm-card ion-text-center">
         <IonCardHeader>
         <IonCardTitle>
             {formatDate(targetDate)}
-          
-
-          </IonCardTitle>
+        
+        </IonCardTitle>
         </IonCardHeader>
         <IonCardContent>
           <BiorhythmChart birthDate={birthDate} targetDate={targetDate}/>  

@@ -8,6 +8,7 @@ function calculateBiorhythm(birthDate, targetDate,cycle){
 }
 export function calculateBiorhythms(birthDate, targetDate){
     return{
+        date: targetDate, 
         physical: calculateBiorhythm(birthDate, targetDate,23),
         emotional: calculateBiorhythm(birthDate, targetDate, 28),
         intellectual: calculateBiorhythm(birthDate, targetDate,33),
